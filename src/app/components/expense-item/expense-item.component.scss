@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+.expense-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.expense-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.expense-amount {
+  text-align: end;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.expense-date {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #666;
+}
+
+.expense-title {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.expense-actions {
+  text-align: right;
+
+  > * {
+    margin-left: 10px;
+  }
+}

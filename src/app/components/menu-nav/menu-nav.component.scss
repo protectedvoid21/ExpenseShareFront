@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+ul {
+  list-style: outside;
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  li {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+
+    &:hover {
+      background-color: #e6e4e4;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+}
