@@ -3,8 +3,25 @@
   width: 100%;
 }
 
-.expense-container {
+.greeting {
+  text-align: center;
+  margin-block: 25px;
+}
+
+.expense-actions {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  gap: 0.4em;
+  justify-content: end;
+}
+
+.btn-add-expense {
+  background-color: #27ff88;
+}
+
+.btn-pay-owed {
+  background-color: #ffd343;
+}
+
+.expense-container {
+  
 }

@@ -1,0 +1,13 @@
+<div class="expense" *ngFor="let expense of expenses">
+  <img src="../../../assets/spclogo.jpeg" class="group-img"/>
+  <div class="expense-info">
+    <div>
+      <a href="#" class="expense-title">{{expense.name}}</a>
+      <div class="expense-author">Utworzony przez: Michał</div>
+    </div>
+    <div>
+      <div class="amount">{{expense.amount}} zł</div>
+      <div class="date">{{expense.date}}</div>
+    </div>
+  </div>
+</div>

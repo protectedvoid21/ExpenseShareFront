@@ -1,25 +1,21 @@
-:host {
-  display: block;
-}
-
-.logo {
-  left: 20px;
-  top: 20px;
-  letter-spacing: 1.3px;;
-  font-weight: bold;
-  color: white;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  font-size: 2rem;
-}
-
 .navbar {
-  position: sticky;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0 20px;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-inline: 40px;
-  height: 50px;
-  background-color: rgb(16, 238, 53);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  z-index: 3;
+
+  > div {
+    display: flex;
+    gap: 2em;
+  }
+
+  .logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+  }
 }

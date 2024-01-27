@@ -1,7 +1,14 @@
-<ul>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Groups</a></li>
-  <li><a href="#">Friends</a></li>
-  <li><a href="#">Expenses</a></li>
-  <li><a href="#">Preferences</a></li>
-</ul>
+<div class="menu">
+  <div #menuIcon class="menu-icon">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <ul #menuList class="menu-content slide-out">
+    <li *ngFor="let menuItem of menuItems">
+      <a href={{menuItem.link}} class="menu-link">
+        {{menuItem.name}}
+      </a>
+    </li>
+  </ul>
+</div>

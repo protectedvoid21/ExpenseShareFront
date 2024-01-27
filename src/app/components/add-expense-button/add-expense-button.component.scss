@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+button {
+  background-color: #ff4931;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  font-size: 4em;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+button:after {
+  content: '\002b';
+}

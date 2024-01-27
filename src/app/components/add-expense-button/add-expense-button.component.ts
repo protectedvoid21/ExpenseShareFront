@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-expense-item',
+  selector: 'app-add-expense-button',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: './expense-item.component.html',
-  styleUrls: ['./expense-item.component.scss'],
+  templateUrl: './add-expense-button.component.html',
+  styleUrls: ['./add-expense-button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExpenseItemComponent { }
+export class AddExpenseButtonComponent { }

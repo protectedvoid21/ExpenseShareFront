@@ -1,6 +1,13 @@
-<div class="expense-container">
-  <app-expense-item></app-expense-item>
-  <app-expense-item></app-expense-item>
-  <app-expense-item></app-expense-item>
-  <app-expense-item></app-expense-item>
+<div class="greeting">
+  <div class="home-title">Witaj w aplikacji budżetowej!</div>
+  <div class="home-info">
+    Lista wydatków w obserwowanych przez Ciebie grupach
+  </div>
+</div>
+<div class="expense-actions">
+  <button class="btn btn-pay-owed">Przelej należność</button>
+  <button class="btn btn-add-expense" onClick={addExpenseClicked}>Dodaj wydatek</button>
+</div>
+<div class="expense-list">
+  <app-expenses/>
 </div>
