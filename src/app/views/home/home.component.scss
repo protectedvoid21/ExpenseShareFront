@@ -1,5 +1,4 @@
 :host {
-  display: block;
   width: 100%;
 }
 
@@ -24,4 +23,16 @@
 
 .expense-container {
   
+}
+
+.background-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-block: 20px;
+  margin-inline: auto;
 }

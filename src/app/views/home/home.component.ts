@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angu
 import { UserShortDisplayComponent } from '../../components/user-short-display/user-short-display.component';
 import { ExpensesComponent } from '../../components/expense/expenses.component';
 import { AddExpenseDialogComponent } from 'src/app/components/add-expense-dialog/add-expense-dialog.component';
+import { MenuNavComponent } from "../../components/menu-nav/menu-nav.component";
 
 @Component({
     selector: 'app-home',
@@ -15,7 +16,8 @@ import { AddExpenseDialogComponent } from 'src/app/components/add-expense-dialog
         ExpensesComponent,
         UserShortDisplayComponent,
         ExpensesComponent,
-        AddExpenseDialogComponent
+        AddExpenseDialogComponent,
+        MenuNavComponent
     ]
 })
 export class HomeComponent {

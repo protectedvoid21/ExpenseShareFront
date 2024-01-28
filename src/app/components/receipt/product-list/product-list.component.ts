@@ -3,11 +3,13 @@ import { Product } from '../product';
 import { Person } from '../person';
 import { CheckboxPersonProductModel } from '../checkbox-person-product.model';
 import { FormatUtils } from '../format-utils';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.scss'],
+  imports: [ NgFor],
   standalone: true,
 })
 export class ProductListComponent {

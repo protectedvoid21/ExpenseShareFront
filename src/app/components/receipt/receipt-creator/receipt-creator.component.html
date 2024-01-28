@@ -4,12 +4,10 @@
 </header>
 
 <main>
-  <div class="forms-container">
-    <app-add-person-form class=""></app-add-person-form>
-    <app-add-product-form (productAdded)="onProductAdded($event)" class=""></app-add-product-form>
+  <div>
+    <app-add-product-form (productAdded)="onProductAdded($event)"/>
+    <app-person-list/>
   </div>
-
-  <app-person-list class="person-container paper"></app-person-list>
 
   <app-product-list
     [products]="products"

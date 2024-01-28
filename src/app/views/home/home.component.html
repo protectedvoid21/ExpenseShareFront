@@ -1,15 +1,21 @@
-<div class="greeting">
-  <div class="home-title">Witaj w aplikacji budżetowej!</div>
-  <div class="home-info">
-    Lista wydatków w obserwowanych przez Ciebie grupach
+<div style="display: flex; flex-direction: row;">
+  <app-menu-nav/>
+  <div class="background-panel">
+    <div class="greeting">
+      <div class="home-title">Witaj w aplikacji budżetowej!</div>
+      <div class="home-info">
+        Lista wydatków w obserwowanych przez Ciebie grupach
+      </div>
+    </div>
+    <div class="expense-actions">
+      <button class="btn btn-pay-owed text-white">Przelej należność</button>
+      <button class="btn btn-add-expense text-white" (click)="openAddExpenseDialog()">Dodaj wydatek</button>
+    </div>
+    <div class="expense-list">
+      <app-expenses/>
+    </div>
   </div>
-</div>
-<div class="expense-actions">
-  <button class="btn btn-pay-owed text-white">Przelej należność</button>
-  <button class="btn btn-add-expense text-white" (click)="openAddExpenseDialog()">Dodaj wydatek</button>
-</div>
-<div class="expense-list">
-  <app-expenses/>
+  <app-user-short-display/>
 </div>
 
 <app-add-expense-dialog/>

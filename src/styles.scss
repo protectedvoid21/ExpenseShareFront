@@ -4,6 +4,7 @@ $white-color: #f5f5f5;
 
 * {
   font-family: 'Roboto';
+  font-weight: 300;
   box-sizing: border-box;
 }
 
@@ -15,6 +16,13 @@ body {
     font-size: 1rem;
   }
 }
+
+.paper {
+  padding: 1em;
+  margin: 2em;
+  box-shadow: 1px 1px 5px rgba(0,0,0, 0.1);
+}
+
 
 .btn-outlined {
   border: 1px solid $primary-color;
@@ -61,6 +69,14 @@ button {
 
 code {
   font-family: 'Iosevka Extended'
+}
+
+.text-error {
+  color: red;
+}
+
+.text-success {
+  color: green;
 }
 
 input {

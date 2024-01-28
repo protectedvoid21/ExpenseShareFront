@@ -4,7 +4,6 @@ import { Product } from '../product';
 import { CheckboxPersonProductModel } from '../checkbox-person-product.model';
 import { ReceiptCacheService } from 'src/app/services/receipt-cache.service';
 import { PersonObserver } from '../person-observer';
-import { AddPersonFormComponent } from "../person-list/add-person-form/add-person-form.component";
 import { AddProductFormComponent } from "../product-list/add-product-form/add-product-form.component";
 import { PersonListComponent } from "../person-list/person-list.component";
 import { ProductListComponent } from "../product-list/product-list.component";
@@ -13,7 +12,7 @@ import { ProductListComponent } from "../product-list/product-list.component";
     templateUrl: './receipt-creator.component.html',
     styleUrls: ['./receipt-creator.component.scss'],
     standalone: true,
-    imports: [AddPersonFormComponent, AddProductFormComponent, PersonListComponent, ProductListComponent]
+    imports: [AddProductFormComponent, PersonListComponent, ProductListComponent]
 })
 export class ReceiptCreatorComponent implements PersonObserver {
   persons: Person[] = [];
@@ -23,7 +22,9 @@ export class ReceiptCreatorComponent implements PersonObserver {
     this.receiptCacheService.addObservator(this);
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.seedSample();
+  }
 
   private seedSample() {
     this.products = [
@@ -37,6 +38,15 @@ export class ReceiptCreatorComponent implements PersonObserver {
       new Product('Potato', 1.75),
       new Product('Onion', 1.1),
     ];
+
+    this.persons = [
+      new Person('Bob'),
+      new Person('Alice'),
+      new Person('Joe'),
+      new Person('Ann'),
+    ];
+
+    this.receiptCacheService.setPersons(this.persons);
   }
 
   onProductAdded(product: Product) {
