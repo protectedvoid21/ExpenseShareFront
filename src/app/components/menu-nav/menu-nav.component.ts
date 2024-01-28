@@ -11,11 +11,11 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild } fro
 })
 export class MenuNavComponent {
   readonly menuItems: MenuItem[] = [
-    { name: 'Home', link: '/' },
-    { name: 'Expenses', link: '/expenses' },
-    { name: 'Incomes', link: '/incomes' },
-    { name: 'Budgets', link: '/budgets' },
-    { name: 'Settings', link: '/settings' },
+    { name: 'Home', link: '/', icon: 'home' },
+    { name: 'Expenses', link: '/expenses', icon: 'receipt' },
+    { name: 'Incomes', link: '/incomes', icon: 'trending_up' },
+    { name: 'Budgets', link: '/budgets', icon: 'account_balance_wallet' },
+    { name: 'Settings', link: '/settings', icon: 'settings'},
   ];
 
   @ViewChild('menuIcon') menuIcon!: ElementRef<HTMLDivElement>;
@@ -34,4 +34,5 @@ export class MenuNavComponent {
 interface MenuItem {
   name: string;
   link: string;
+  icon: string;
 }

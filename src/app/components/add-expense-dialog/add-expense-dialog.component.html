@@ -1,0 +1,16 @@
+<dialog #addExpenseDialog>
+  <h2>Wybierz rodzaj wydatku</h2>
+  <div class="block-container">
+    <button class="btn select-block">
+      <span class="material-symbols-outlined">payments</span>
+      Wydatek
+    </button>
+    <button class="btn select-block" [routerLink]="'/receipt/create'" routerLinkActive="active">
+      <span class="material-symbols-outlined">receipt</span>
+      Paragon
+    </button>
+  </div>
+  <div class="dialog-actions">
+    <button class="btn" (click)="close()">Zamknij</button>
+  </div>
+</dialog>

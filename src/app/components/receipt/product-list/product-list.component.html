@@ -1,0 +1,32 @@
+<table>
+  <thead>
+    <tr>
+      <th>Produkt</th>
+      <th>Cena</th>
+      <th>Osoby</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ FormatUtils.formatPrice(product.price) }} zł</td>
+      <td>
+        <div class="checkbox-container">
+          <div *ngFor="let person of persons" class="person-checkbox">
+            <label>
+              <input type="checkbox" (change)="onProductCheckboxChanged(product, person, $event)">
+              <span>{{ person.name }}</span>
+            </label>
+          </div>
+        </div>
+      </td>
+      <td class="remove-icon" (click)="onProductRemoved(product)"><span class="material-symbols-outlined">delete</span></td>
+    </tr>
+    <tr>
+      <td class="sum-price" colspan="1">Suma</td>
+      <td class="sum-price">{{ FormatUtils.formatPrice(getProductSumPrice()) }} zł</td>
+      <td colspan="1"></td>
+    </tr>
+  </tbody>
+</table>

@@ -5,9 +5,11 @@
   </div>
 </div>
 <div class="expense-actions">
-  <button class="btn btn-pay-owed">Przelej należność</button>
-  <button class="btn btn-add-expense" onClick={addExpenseClicked}>Dodaj wydatek</button>
+  <button class="btn btn-pay-owed text-white">Przelej należność</button>
+  <button class="btn btn-add-expense text-white" (click)="openAddExpenseDialog()">Dodaj wydatek</button>
 </div>
 <div class="expense-list">
   <app-expenses/>
 </div>
+
+<app-add-expense-dialog/>

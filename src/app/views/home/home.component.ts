@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UserShortDisplayComponent } from "../../components/user-short-display/user-short-display.component";
-import { AddExpenseButtonComponent } from "../../components/add-expense-button/add-expense-button.component";
-import { ExpensesComponent } from "../../components/expense/expenses.component";
+import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
+import { UserShortDisplayComponent } from '../../components/user-short-display/user-short-display.component';
+import { ExpensesComponent } from '../../components/expense/expenses.component';
+import { AddExpenseDialogComponent } from 'src/app/components/add-expense-dialog/add-expense-dialog.component';
 
 @Component({
     selector: 'app-home',
@@ -14,8 +14,15 @@ import { ExpensesComponent } from "../../components/expense/expenses.component";
         CommonModule,
         ExpensesComponent,
         UserShortDisplayComponent,
-        AddExpenseButtonComponent,
-        ExpensesComponent
+        ExpensesComponent,
+        AddExpenseDialogComponent
     ]
 })
-export class HomeComponent { }
+export class HomeComponent {
+  @ViewChild(AddExpenseDialogComponent)
+  addExpenseDialog!: AddExpenseDialogComponent;
+  
+  openAddExpenseDialog() {
+    this.addExpenseDialog.show();
+  }
+}

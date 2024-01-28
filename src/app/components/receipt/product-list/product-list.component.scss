@@ -1,0 +1,66 @@
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  text-align: center;
+
+  tbody tr td:first-child {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  tbody tr:last-child {
+    border-top: 1px dashed #ccc;
+  }
+}
+
+.remove-icon {
+  color: #911;
+  cursor: pointer;
+  user-select: none;
+}
+
+.person-checkbox {
+  margin: 4px;
+  background-color: #EFEFEF;
+  border-radius: 4px;
+  border: 1px solid #D0D0D0;
+  float: left;
+  transition: all 0.1s;
+
+  &:hover {
+    background: #91e1ff;
+  }
+
+  label {
+    float: left;
+    min-width: 4em;
+    width: auto;
+
+    span {
+      text-align: center;
+      padding: 3px 10px;
+      display: block;
+      cursor: pointer;
+    }
+
+    input {
+      position: absolute;
+      top: -20px;
+
+      &:checked + span {
+        background-color: #2196f3;
+        border-radius: 4px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.sum-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 0.2em;
+}
