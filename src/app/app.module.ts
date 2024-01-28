@@ -8,6 +8,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { MenuNavComponent } from "./components/menu-nav/menu-nav.component";
 import { UserShortDisplayComponent } from './components/user-short-display/user-short-display.component';
 import { ExpensesComponent } from './components/expense/expenses.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import { ExpensesComponent } from './components/expense/expenses.component';
     imports: [
         BrowserModule,
         AppRoutingModule,
+        HttpClientModule,
         HomeComponent,
         ExpensesComponent,
         NavbarComponent,

@@ -8,6 +8,11 @@ $primary-color: #4a7afd;
 
 body {
   margin: 0;
+  font-size: 18px;
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 .btn-outlined {
@@ -30,6 +35,7 @@ body {
 button {
   font-family: 'Roboto';
   padding: 0.3em;
+  font-size: 1.1rem;
 }
 
 .btn {
@@ -52,4 +58,49 @@ button {
 
 code {
   font-family: 'Iosevka Extended'
+}
+
+input {
+  font-family: 'Roboto';
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1em;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 20vw;
+}
+
+.tab {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-color: $primary-color;
+  }
+
+  &.active {
+    border-bottom-color: $primary-color;
+  }
+}
+
+.d-none {
+  display: none;
 }
