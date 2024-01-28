@@ -25,6 +25,7 @@ export class ProductListComponent {
       product: product,
       checked: event.target.checked,
     });
+
   }
 
   onProductRemoved(product: Product): void {

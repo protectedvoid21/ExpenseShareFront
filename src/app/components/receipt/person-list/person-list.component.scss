@@ -1,1 +1,29 @@
 @import '../receipt-creator/receipt-creator.component.scss';
+
+table {
+  width: 100%;
+
+  tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+
+  thead tr th {
+    padding: 0.3em 1em;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+
+  tbody tr td {
+    height: 10px;
+    padding: 0.3em 1em;
+    border-bottom: 1px solid #ccc;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+}

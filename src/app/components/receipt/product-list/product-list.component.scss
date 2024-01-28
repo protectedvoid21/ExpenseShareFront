@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-table {
+.table {
   text-align: center;
 
   tbody tr td:first-child {
@@ -48,7 +48,9 @@ table {
 
     input {
       position: absolute;
-      top: -20px;
+      opacity: 0;
+      height: 0;
+      width: 0;
 
       &:checked + span {
         background-color: #2196f3;

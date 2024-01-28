@@ -37,6 +37,9 @@ export class ReceiptCreatorComponent implements PersonObserver {
       new Product('Tomato', 2.58),
       new Product('Potato', 1.75),
       new Product('Onion', 1.1),
+      new Product('Cucumber', 2.34),
+      new Product('Chips', 3.67),
+      new Product('Cookies', 4.85),
     ];
 
     this.persons = [
