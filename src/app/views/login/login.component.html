@@ -8,32 +8,36 @@
 </div>
 
 <div class="login-container">
-  <div #loginForm>
+  <div #loginForm class="form-container">
     <h2>Login form</h2>
     <form [formGroup]="form" (ngSubmit)="login()" class="login-form">
-      <div class="form-group">
+      <div class="form-group custom-input">
         <input type="text" class="form-control" formControlName="username" id="username" placeholder="Username">
+        <label>Username</label>
       </div>
-      <div class="form-group">
+      <div class="form-group custom-input">
         <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
+        <label>Password</label>
       </div>
       <button type="submit" class="btn btn-primary submit-btn">Submit</button>
     </form>
   </div>
-  <div #registerForm class="d-none">
+  <div #registerForm class="d-none form-container">
     <h2>Register form</h2>
-    <form [formGroup]="form" (ngSubmit)="login()" class="login-form">
-      <div class="form-group">
-        <input type="text" class="form-control" formControlName="email" id="username" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" formControlName="username" id="username" placeholder="Username">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
-      </div>
-      <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-    </form>
+      <form [formGroup]="form" (ngSubmit)="register()" class="login-form">
+        <div class="form-group custom-input">
+          <input type="text" class="form-control" formControlName="email" id="username" placeholder="Email">
+          <label>Email</label>
+        </div>
+        <div class="form-group custom-input">
+          <input type="text" class="form-control" formControlName="username" id="username" placeholder="Username">
+          <label>Username</label>
+        </div>
+        <div class="form-group custom-input">
+          <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+      </form>
   </div>
-
 </div>

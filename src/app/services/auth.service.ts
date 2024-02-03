@@ -10,7 +10,7 @@ import LoginToken from './token';
   providedIn: 'root',
 })
 export class AuthService {
-  private readonly baseUrl = '/account';
+  private readonly baseUrl = 'accounts';
 
   constructor(private httpClient: HttpClient) {}
 

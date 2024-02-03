@@ -9,15 +9,19 @@
 
 .login-container {
   width: 50%;
-  display: flex;
+  margin-inline: auto;
   flex-direction: column;
   text-align: center;
+}
+
+.form-container {
+  width: 50%;
+  margin-inline: auto;
 }
 
 .submit-btn {
   margin-top: 1em;
   width: 100%;
-  max-width: 20vw;
 }
 
 .tab-container {

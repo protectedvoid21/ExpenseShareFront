@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Person } from '../person';
-import { Product } from '../product';
-import { CheckboxPersonProductModel } from '../checkbox-person-product.model';
+import { Person } from '../../components/receipt/person';
+import { Product } from '../../components/receipt/product';
+import { CheckboxPersonProductModel } from '../../components/receipt/checkbox-person-product.model';
 import { ReceiptCacheService } from 'src/app/services/receipt-cache.service';
-import { PersonObserver } from '../person-observer';
-import { AddProductFormComponent } from "../product-list/add-product-form/add-product-form.component";
-import { PersonListComponent } from "../person-list/person-list.component";
-import { ProductListComponent } from "../product-list/product-list.component";
+import { PersonObserver } from '../../components/receipt/person-observer';
+import { AddProductFormComponent } from "../../components/receipt/product-list/add-product-form/add-product-form.component";
+import { PersonListComponent } from "../../components/receipt/person-list/person-list.component";
+import { ProductListComponent } from "../../components/receipt/product-list/product-list.component";
 
 @Component({
     templateUrl: './receipt-creator.component.html',

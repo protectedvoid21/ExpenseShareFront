@@ -11,11 +11,12 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild } fro
 })
 export class MenuNavComponent {
   readonly menuItems: MenuItem[] = [
-    { name: 'Home', link: '/', icon: 'home' },
-    { name: 'Expenses', link: '/expenses', icon: 'receipt' },
-    { name: 'Incomes', link: '/incomes', icon: 'trending_up' },
-    { name: 'Budgets', link: '/budgets', icon: 'account_balance_wallet' },
-    { name: 'Settings', link: '/settings', icon: 'settings'},
+    { name: 'Strona główna', link: '/', icon: 'home' },
+    { name: 'Wydatki', link: '/expenses', icon: 'receipt' },
+    { name: 'Przychody', link: '/incomes', icon: 'trending_up' },
+    { name: 'Grupy', link: '/budgets', icon: 'account_balance_wallet' },
+    { name: 'Podsumowanie', link: '/categories', icon: 'category' },
+    { name: 'Ustawienia', link: '/settings', icon: 'settings'},
   ];
 
   @ViewChild('menuIcon') menuIcon!: ElementRef<HTMLDivElement>;
